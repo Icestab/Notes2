@@ -12,7 +12,7 @@ hero:
       link: /markdown-examples
     - theme: alt
       text: View on GitHub
-      link: /api-examples
+      link: /study/pnpm
   image:
     src: /node.png
     alt: 网页图标

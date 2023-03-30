@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "个人杂记",
   description: "A Nodes Site",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -16,6 +17,13 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text: '学习',
+        items: [
+          { text: 'vscode无法运行npm脚本', link: '/study/pnpm' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       }
