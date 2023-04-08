@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as t,U as r}from"./chunks/framework.3eb667f5.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"life/OpenWrt.md","lastUpdated":1680934572000}'),n={name:"life/OpenWrt.md"},o=r("",11),l=[o];function p(_,i,h,s,d,c){return a(),t("div",null,l)}const m=e(n,[["render",p]]);export{u as __pageData,m as default};
