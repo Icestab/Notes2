@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读->
-      link: /markdown-examples
+      link: /guide/README
     - theme: alt
       text: View on GitHub
-      link: /study/pnpm
+      link: https://github.com/Icestab/Nodes2
   image:
     src: /node.png
     alt: 网页图标

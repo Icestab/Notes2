@@ -6,7 +6,7 @@ export default defineConfig({
   head: [
     [
       'link', // 设置 favicon.ico，注意图片放在 public 文件夹下
-      { rel: 'icon', href: '/image/f.ico' }
+      { rel: 'icon', href: '/f.ico' }
     ]
   ],
   title: "个人杂记",
@@ -81,6 +81,7 @@ export default defineConfig({
       placeholder: "搜索文档",
       tokenize: "full"
     }
-    )]
+    )],
+    build: { ssr: false }
   }
 })
