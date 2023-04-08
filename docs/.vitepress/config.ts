@@ -36,7 +36,8 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '前端小技巧', link: '/study/html_css_js/html_css' },
-          { text: 'Vue日常笔记', link: '/study/html_css_js/vue1' }
+          { text: 'Vue日常笔记', link: '/study/html_css_js/vue1' },
+          {text:'vscode无法运行npm脚本',link:'/study/pnpm'}
         ]
       },
       {
