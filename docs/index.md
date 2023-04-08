@@ -11,7 +11,7 @@ hero:
       text: 开始阅读->
       link: /guide/README
     - theme: alt
-      text: View on GitHub
+      text: 在GitHub上查看
       link: https://github.com/Icestab/Notes2
   image:
     src: /node.png
