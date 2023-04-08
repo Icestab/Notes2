@@ -10,7 +10,7 @@ export default defineConfig({
     ]
   ],
   title: "个人杂记",
-  description: "A Nodes Site",
+  description: "A Notes Site",
   lastUpdated: true,
 
   themeConfig: {

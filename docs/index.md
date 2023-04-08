@@ -12,7 +12,7 @@ hero:
       link: /guide/README
     - theme: alt
       text: View on GitHub
-      link: https://github.com/Icestab/Nodes2
+      link: https://github.com/Icestab/Notes2
   image:
     src: /node.png
     alt: 网页图标
