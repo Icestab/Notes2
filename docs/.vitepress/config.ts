@@ -3,6 +3,12 @@ import { SearchPlugin } from "vitepress-plugin-search";
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
+  head: [
+    [
+      'link', // 设置 favicon.ico，注意图片放在 public 文件夹下
+      { rel: 'icon', href: '/image/f.ico' }
+    ]
+  ],
   title: "个人杂记",
   description: "A Nodes Site",
   lastUpdated: true,
@@ -29,24 +35,26 @@ export default defineConfig({
         text: '前端',
         collapsed: false,
         items: [
-          { text: 'vscode无法运行npm脚本', link: '/study/pnpm' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '前端小技巧', link: '/study/html_css_js/html_css' },
+          { text: 'Vue日常笔记', link: '/study/html_css_js/vue1' }
         ]
       },
       {
         text: '文学',
         collapsed: false,
         items: [
-          { text: 'vscode无法运行npm脚本', link: '/study/pnpm' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '时间语录', link: '/study/literary/extract' },
         ]
       },
       {
         text: '环境问题',
         collapsed: false,
         items: [
-          { text: 'vscode无法运行npm脚本', link: '/study/pnpm' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Centos7重置Mysql8 root 密码', link: '/study/questions/mysql_pass' },
+          { text: 'Linux命令', link: '/study/questions/linux' },
+          { text: 'SSH防止暴力破解', link: '/study/questions/ssh' },
+          { text: 'Centos7 升级内核版本', link: '/study/questions/centos7' },
+          { text: 'ubuntu-20.04.4-server安装与基本配置', link: '/study/questions/ubuntu-20.04.4-server' },
         ]
       }
     ],
@@ -63,7 +71,7 @@ export default defineConfig({
     returnToTopLabel: '返回顶部',
     darkModeSwitchLabel: '主题',
     outlineTitle: '此页',
-
+    outline:'deep'
 
   },
   vite: {

@@ -1,6 +1,3 @@
----
-outline: deep
----
 # oh-my-zsh安装与基本配置
 
 zsh是一个Linux下强大的shell, 由于大多数Linux产品安装以及默认使用bash shell, 但是丝毫不影响极客们对zsh的热衷, 几乎每一款Linux产品都包含有zsh，通常可以用apt、urpmi或yum等包管理器进行安装

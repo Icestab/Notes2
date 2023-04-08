@@ -1,6 +1,3 @@
----
-outline: deep
----
 # Netflix UWP Windows客户端除网络隔离的方法
 
 **此方式适用于其它内置应用**
