@@ -16,14 +16,34 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '生活',
+        collapsed: false,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: '红米2100路由器刷机', link: '/life/RM2100' },
+          { text: '科学上网', link: '/life/ss/vpn' },
+          { text: 'oh-my-zsh安装与基本配置', link: '/life/oh-my-zsh' },
+          { text: 'Netflix UWP Windows客户端除网络隔离的方法', link: '/life/netflix' }
+        ]
+      },
+      {
+        text: '前端',
+        collapsed: false,
+        items: [
+          { text: 'vscode无法运行npm脚本', link: '/study/pnpm' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       },
       {
-        text: '学习',
+        text: '文学',
+        collapsed: false,
+        items: [
+          { text: 'vscode无法运行npm脚本', link: '/study/pnpm' },
+          { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text: '环境问题',
+        collapsed: false,
         items: [
           { text: 'vscode无法运行npm脚本', link: '/study/pnpm' },
           { text: 'Runtime API Examples', link: '/api-examples' }
