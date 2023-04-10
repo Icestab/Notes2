@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "个人杂记"
-  text: "A Note Site"
+  text: "A Notes Site"
   tagline: Accept what was and what is, and you'll more positive energy to pursue what will be.
   actions:
     - theme: brand
