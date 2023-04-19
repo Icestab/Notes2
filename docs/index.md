@@ -9,12 +9,12 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读->
-      link: /guide/README
+      link: /guide/Software
     - theme: alt
       text: 在GitHub上查看
       link: https://github.com/Icestab/Notes2
   image:
-    src: /node.png
+    src: /node.webp
     alt: 网页图标
 features:
   - title: 文学随记
