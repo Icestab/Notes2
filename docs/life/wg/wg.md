@@ -37,7 +37,7 @@ cat sharekey
 # 获取密钥复制保存
 ```
 
-![w1](./w1.jpeg)
+![w1](./w1.webp)
 
 #### 1.1.2 服务端公钥私钥
 
@@ -50,7 +50,7 @@ cat server_publickey
 # 获取服务端公钥复制保存
 ```
 
-![w2](./w2.jpeg)
+![w2](./w2.webp)
 
 #### 1.1.3 客户端公钥私钥 ( macOS )
 
@@ -65,7 +65,7 @@ cat macos_publickey
 # 获取 macOS 客户端公钥复制保存
 ```
 
-![w3](./w3.jpeg)
+![w3](./w3.webp)
 
 ### 1.2 配置 OpenWRT
 
@@ -75,34 +75,34 @@ cat macos_publickey
 
 登陆 OpenWRT – 网络 – 接口 – 添加新接口
 
-![w4](./w4.jpeg)
+![w4](./w4.webp)
 
 填写接口名 – 选择接口协议 – 提交
 
-![w5](./w5.jpeg)
+![w5](./w5.webp)
 
 基本设置 – 填写上文获取的`服务端私钥`
 自行填写一个端口号 – `并且在路由器映射该端口的 UDP 协议`
 IP 地址填写一个 VPN 专用的网段 IP – 本文以`192.168.100.X`为 WireGuard 的专用网段为例,则本 WG 服务器 IP 为`192.168.100.1/24`
 
-![w6](./w6.jpeg)
+![w6](./w6.webp)
 
 防火墙设置 – 选择 vpn
 
-![w7](./w7.jpeg)
+![w7](./w7.webp)
 
 #### 1.2.2 客户端 Peers 区域为每个客户端添加配置
 
 选择`预共享密钥` – 添加
 
-![w8](./w8.jpeg)
+![w8](./w8.webp)
 
 公钥 – 填写上文获取的`macOS 客户端公钥`
 预共享密钥 – 填写上文获取的`预共享密钥`
 允许的 IP – 即表示为此 macOS 客户端分配固定 IP , 本文示例为 `192.168.100.2/32` , **注意各客户端 IP 不能冲突**.
 持续 Keep-Alive – 填写 25
 
-![w9](./w9.jpeg)
+![w9](./w9.webp)
 
 #### 1.2.3 防火墙
 
@@ -120,7 +120,7 @@ iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o br-lan -j MASQUERADE
 返回网络 – 接口 – 关闭 – 连接
 或者直接重启整个 OpenWRT 最为稳妥
 
-![w10](./w10.jpeg)
+![w10](./w10.webp)
 
 ## 2、客户端
 
@@ -159,42 +159,42 @@ PersistentKeepalive = 25
 
 在 macOS App Store 下载 `WireGuard`,从文件导入隧道。
 
-![w11](./w11.jpeg)
+![w11](./w11.webp)
 
 选择允许添加 VPN 配置
 
-![w12](./w12.jpeg)
+![w12](./w12.webp)
 
 连接成功
 
-![w13](./w13.jpeg)
+![w13](./w13.webp)
 
 在 OpenWRT 状态页面能够看到连接成功的状态信息
 
-![w14](./w14.jpeg)
+![w14](./w14.webp)
 
 ### 2.3 iOS
 
 重复上述操作创建 iPhone 的配置文件,并上传至 iCloud 云盘.
 在 iOS 设备 App Store 下载 `WireGuard`
 
-<img src="./w15.jpeg" alt="w15" style="zoom:30%;" />
+<img src="./w15.webp" alt="w15" style="zoom:30%;" />
 
 添加隧道 – 导入配置或压缩包
 
-<img src="./w16.jpeg" alt="w16" style="zoom:33%;" />
+<img src="./w16.webp" alt="w16" style="zoom:33%;" />
 
 从 iCloud 云盘中选择 iphone_wireguard.conf 配置文件
 
-<img src="./w17.jpeg" alt="w17" style="zoom:33%;" />
+<img src="./w17.webp" alt="w17" style="zoom:33%;" />
 
 选择允许添加 VPN 配置
 
-<img src="./w18.jpeg" alt="w18" style="zoom:33%;" />
+<img src="./w18.webp" alt="w18" style="zoom:33%;" />
 
 连接成功
 
-<img src="./w19.jpeg" alt="w19" style="zoom:33%;" />
+<img src="./w19.webp" alt="w19" style="zoom:33%;" />
 
 ## 结语
 

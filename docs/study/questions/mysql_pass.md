@@ -4,12 +4,12 @@
 ### 1.1 打开配置文件
 `vim /etc/my.cnf`
 
-![m1](./m1.jpg)
+![m1](./m1.webp)
 
 ### 1.2 在 [mysqld]最后加上如下语句 并保持退出文件
 `skip-grant-tables`
 
-![m2](./m2.jpg)
+![m2](./m2.webp)
 ### 1.3 重启mysql服务
 `service mysqld restart`
 ## 二、免密登录mysql，直接在命令行上输入
@@ -33,7 +33,7 @@ authentication_string: 用户密码；在mysql 5.7.9以后废弃了password字�
 
 plugin： 密码加密方式；
 
-![m3](./m3.jpg)
+![m3](./m3.webp)
 
 ### 3.2如果当前root用户authentication_string字段下有内容，先将其设置为空
 ``` sql
