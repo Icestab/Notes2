@@ -29,7 +29,8 @@ export default defineConfig({
           { text: '科学上网', link: '/life/ss/vpn' },
           { text: 'OpenWRT 配置 WireGuard 服务端及客户端配置教程', link: '/life/wg/wg' },
           { text: 'oh-my-zsh安装与基本配置', link: '/life/oh-my-zsh' },
-          { text: 'Netflix UWP Windows客户端除网络隔离的方法', link: '/life/netflix' }
+          { text: 'Netflix UWP Windows客户端除网络隔离的方法', link: '/life/netflix' },
+          { text: 'Ventoy 安装教程', link: '/life/ventoy/ventoy' }
         ]
       },
       {
