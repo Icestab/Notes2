@@ -1,5 +1,5 @@
 # Centos7重置Mysql8 root 密码
-安装完 最新版的 mysql8后忘记了密码，向重置root密码；找了网上好多资料都不尽相同，根据自己的问题总结如下：
+安装完 最新版的 mysql8后忘记了密码，想重置root密码；找了网上好多资料都不尽相同，根据自己的问题总结如下：
 ## 一、修改配置文件免密码登录mysql
 ### 1.1 打开配置文件
 `vim /etc/my.cnf`
@@ -50,10 +50,10 @@ passwrod:直接回车;
 ``` sql
  ALTER user 'root'@'localhost' IDENTIFIED BY 'Qian123#'
 ```
-至此修改成功； 从新使用用户名密码登录即可。
+至此修改成功； 重新使用用户名密码登录即可。
 
 ::: tip 提示
-一定不要采取如下形式该密码：
+一定不要采取如下形式改密码：
 ``` sql
 use mysql;
 update user set authentication_string="newpassword" where user="root";
@@ -62,5 +62,5 @@ update user set authentication_string="newpassword" where user="root";
 
 当再使用ALTER USER 'root'@'localhost' IDENTIFITED BY 'newpassword'时会报错的；
 
-因为authentication_string字段下只能是mysql加密后的41位字符串密码；其他的会报格式错误；
+因为authentication_string字段下只能是mysql加密后的41位字符串密码；其它的会报格式错误；
 :::
