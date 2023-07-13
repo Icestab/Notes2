@@ -30,7 +30,8 @@ export default defineConfig({
           { text: 'OpenWRT 配置 WireGuard 服务端及客户端配置教程', link: '/life/wg/wg' },
           { text: 'oh-my-zsh安装与基本配置', link: '/life/oh-my-zsh' },
           { text: 'Netflix UWP Windows客户端除网络隔离的方法', link: '/life/netflix' },
-          { text: 'Ventoy 安装教程', link: '/life/ventoy/ventoy' }
+          { text: 'Ventoy 安装教程', link: '/life/ventoy/ventoy' },
+          { text: 'AI - stable-diffusion(AI绘画)的搭建与使用', link: '/life/sdweb/sdweb' }
         ]
       },
       {
