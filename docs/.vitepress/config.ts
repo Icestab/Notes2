@@ -31,7 +31,8 @@ export default defineConfig({
           { text: 'oh-my-zsh安装与基本配置', link: '/life/oh-my-zsh' },
           { text: 'Netflix UWP Windows客户端除网络隔离的方法', link: '/life/netflix' },
           { text: 'Ventoy 安装教程', link: '/life/ventoy/ventoy' },
-          { text: 'AI - stable-diffusion(AI绘画)的搭建与使用', link: '/life/sdweb/sdweb' }
+          { text: 'AI - stable-diffusion(AI绘画)的搭建与使用', link: '/life/sdweb/sdweb' },
+          { text: '使用 caddy 自建 WebDAV 服务器', link: '/life/caddy/caddy' }
         ]
       },
       {
