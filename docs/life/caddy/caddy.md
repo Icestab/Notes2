@@ -44,7 +44,7 @@ docker.io/library/caddy:latest
 docker run -d -p 9000:80 --name caddy caddy
 ```
 
-![1](./1.png)
+![1](./1.webp)
 
 使用浏览器访问ip:9000，如果出现上面图片的内容就说明你成功运行了caddy。
 
@@ -56,13 +56,13 @@ docker run -d -p 9000:80 --name caddy caddy
 
 进入[caddy下载界面](https://caddyserver.com/download)：
 
-![2](./2.png)
+![2](./2.webp)
 
 选择适合你自己的架构，我的机器是arm64的，如果你的机器是x86，请自行更换。
 
 在搜索框输入webdav后选中插件：
 
-![3](./3.png)
+![3](./3.webp)
 
 这时**Extra features**后面的数字变成1，表示成功，点击Download下载，得到文件**caddy_linux_arm64_custom**
 
@@ -185,7 +185,7 @@ exit
 
 再次访问ip:9000，出现下面界面成功部署WebDAV：
 
-![4](./4.png)
+![4](./4.webp)
 
 ## 3、增加用户密码
 
